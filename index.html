@@ -1,17 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Jack Du's Portifolio</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
+<html>
+<head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <!-- Navigation bar with avatar -->
+        <div class="navbar">
+            <div class="avatar">
+                <img src="assets/images/avatar.jpeg" alt="Avatar">
+            </div>
+            <ul>
+                <li class="active"><a href="#" onclick="changePage('introduction')">Introduction</a></li>
+                <li><a href="#" onclick="changePage('projects')">Projects</a></li>
+                <li><a href="#" onclick="changePage('contact')">Contact</a></li>
+            </ul>
+        </div>
+    </header>
 
-    <body>
-        <header>
-        </header>
-        <main>
-        </main>
-        <script src="assets/js/script.js"></script>
-    </body>
+    <main>
+        <!-- Content area -->
+        <div id="content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>This is the introduction section of my portfolio website.</p>
+        </div>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+</body>
 </html>
+
