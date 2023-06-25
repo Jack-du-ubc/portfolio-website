@@ -1,36 +1,21 @@
+// script.js
+
 function changePage(page) {
-    // Remove 'active' class from all navigation items
-    const navItems = document.querySelectorAll('.navbar li');
-    navItems.forEach(item => {
-        item.classList.remove('active');
-    });
+    // Get the content div
+    var contentDiv = document.getElementById('content');
 
-    // Add 'active' class to the selected navigation item
-    const selectedNavItem = document.querySelector(`.navbar li a[href="#"][onclick="changePage('${page}')"]`);
-    selectedNavItem.parentNode.classList.add('active');
+    // Clear the current content
+    contentDiv.innerHTML = '';
 
-    // Load the corresponding content for the selected page
-    const content = document.getElementById('content');
-    switch (page) {
-        case 'introduction':
-            content.innerHTML = `
-                <h1>Welcome to My Portfolio</h1>
-                <p>This is the introduction section of my portfolio website.</p>
-            `;
-            break;
-        case 'projects':
-            content.innerHTML = `
-                <h1>Projects</h1>
-                <p>Here are some of the projects I've worked on.</p>
-            `;
-            break;
-        case 'contact':
-            content.innerHTML = `
-                <h1>Contact</h1>
-                <p>Feel free to reach out to me using the following contact information.</p>
-            `;
-            break;
-        default:
-            break;
+    // Check the page parameter and update the content accordingly
+    if (page === 'home'){
+        contentDiv.innerHTML = '<h1>Welcome to My Portfolio</h1><p>This is the homepage.</p>';
+    } else if (page === 'introduction') {
+        contentDiv.innerHTML = '<h1>Introduction</h1><p>This is the introduction section of my portfolio website.</p>';
+    } else if (page === 'projects') {
+        contentDiv.innerHTML = '<h1>Projects</h1><p>This is the projects section of my portfolio website.</p>';
+    } else if (page === 'contact') {
+        contentDiv.innerHTML = '<h1>Contact</h1><p>This is the contact section of my portfolio website.</p>';
     }
 }
+
