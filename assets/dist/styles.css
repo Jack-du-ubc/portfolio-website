@@ -1,6 +1,32 @@
 #introduction.page {
-  padding: 20px; }
-  #introduction.page .table-info {
-    font-weight: bold; }
+  padding: 10px; }
+  #introduction.page #above {
+    margin-bottom: 10px; }
+  #introduction.page #education {
+    padding-top: 10px; }
+  #introduction.page .card {
+    margin-bottom: 5px;
+    color: white;
+    background-image: linear-gradient(to right, #1a4414, #e1388a); }
+  #introduction.page .card-img-top {
+    padding-top: 20px;
+    height: 200px;
+    width: auto;
+    object-fit: contain; }
+  #introduction.page .row.align-items-start {
+    margin-bottom: 10px; }
+  #introduction.page #intro-topleft.col-sm-8 {
+    margin-top: 10px; }
+    #introduction.page #intro-topleft.col-sm-8 h5 {
+      color: black;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
+  #introduction.page #intro-topleft.col-sm-8 .list-group-item {
+    background: radial-gradient(closest-side, #31d1cc, #ebf8e1, #fcbf7d); }
+  #introduction.page .container-fluid {
+    background: linear-gradient(to right, #1a4414, #e1388a); }
+  #introduction.page #intro-skills.row.text-center .col-sm-4 {
+    color: gold; }
+  #introduction.page #intro-skills.row.text-center .col-sm-8 {
+    color: white; }
 
 /*# sourceMappingURL=styles.css.map */
