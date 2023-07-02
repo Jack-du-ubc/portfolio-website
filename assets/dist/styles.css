@@ -1,3 +1,33 @@
+#home.page {
+  padding: 20px; }
+
+.welcome-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px; }
+
+.logo-circle {
+  width: 100px;
+  height: 100px;
+  background-image: radial-gradient(circle at center, #ff6347, #4169e1);
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out; }
+
+.logo-circle:hover {
+  transform: scale(1.1); }
+
+.logo-text {
+  margin-top: 20px;
+  font-size: 30px;
+  color: #333333; }
+
+.welcome-sentence {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #333333; }
+
 #introduction.page {
   padding: 10px; }
   #introduction.page #above {
