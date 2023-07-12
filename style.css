@@ -4,7 +4,7 @@ header {
     background-color: transparent;
     padding: 10px;
 
-    #nav-avatar {
+    #nav-logo {
         background-image: linear-gradient(to right, #1a4414, #e1388a); 
         display: flex;
         justify-content: space-between;

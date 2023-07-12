@@ -12,18 +12,23 @@
 .logo-circle {
   width: 200px;
   height: 200px;
-  background-image: radial-gradient(circle at center, #ff6347, #4169e1);
+  background-size: cover;
+  background-position: center;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease-in-out;
 }
+
 
 .logo-circle:hover {
   transform: scale(1.1);
 }
 
 .typewrite {
-  color:#fff;
+  padding-top: 50px;
+  color: #00fff2;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
 }
 
 
