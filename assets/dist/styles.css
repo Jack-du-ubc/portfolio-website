@@ -55,4 +55,21 @@
   #introduction.page #intro-skills.row.text-center .col-sm-8 {
     color: white; }
 
+#projects.page {
+  padding: 10px; }
+  #projects.page .card-body {
+    -webkit-animation: fadein 4s linear forwards;
+    animation: fadein 4s linear forwards; }
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 /*# sourceMappingURL=styles.css.map */
