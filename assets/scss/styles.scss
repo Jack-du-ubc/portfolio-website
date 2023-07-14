@@ -96,6 +96,51 @@
     -webkit-animation: fadein 4s linear forwards;
     animation: fadein 4s linear forwards;
   }
+
+  .text-center {
+    display: flex;
+    padding: auto;
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+    color: #ff8888;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+}
+
+#contact.page {
+  padding: 10px;
+
+  .container-fluid {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+  }
+
+  .text-center {
+    padding: auto;
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+    color: #ff8888;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+
+  .text {
+    padding: 120px;
+    font-family: "Arial", sans-serif;
+    color: #022222;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
 }
 
 @-webkit-keyframes fadein {
