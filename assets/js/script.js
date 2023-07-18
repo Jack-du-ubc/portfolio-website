@@ -1,16 +1,26 @@
-// script.js
+const menuLinks = document.querySelectorAll('.nav-link');
+const contentDivs = document.querySelectorAll('.page');
+const DEFAULT_PAGE = 'home';
 
-const navLinks = document.querySelectorAll('.nav-link');
-const pageDivs = document.querySelectorAll('.page');
+const pages = {};
+
+contentDivs.forEach((div) => {
+    const pageId = div.id;
+    pages[pageId] = div;
+});
 
 function showPage(page) {
-    pageDivs.forEach(function (div) {
-        div.style.display = 'none';
+    contentDivs.forEach((div) => {
+        div.classList.remove('show');
+        div.classList.add('hide');
     });
 
-    const selectedPage = document.getElementById(page);
+    const selectedPage = pages[page];
     if (selectedPage) {
-        selectedPage.style.display = 'block';
+        selectedPage.classList.remove('hide');
+        selectedPage.classList.add('show');
+    } else {
+        showPage(DEFAULT_PAGE);
     }
 }
 
@@ -22,5 +32,5 @@ navLinks.forEach(function (link) {
     });
 });
 
-showPage('home');
+showPage(DEFAULT_PAGE);
 

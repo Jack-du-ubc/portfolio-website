@@ -5,13 +5,16 @@ class TxtType {
         this.loopNum = 0;
         this.period = parseInt(period, 10) || 2000;
         this.txt = '';
-        this.tick();
         this.isDeleting = false;
+        
+        if (this.toRotate.length > 0) {
+            this.tick();
+        }
     }
 
     tick() {
-        var i = this.loopNum % this.toRotate.length;
-        var fullTxt = this.toRotate[i];
+        const i = this.loopNum % this.toRotate.length;
+        const fullTxt = this.toRotate[i];
 
         if (this.isDeleting) {
             this.txt = fullTxt.substring(0, this.txt.length - 1);
@@ -19,12 +22,14 @@ class TxtType {
             this.txt = fullTxt.substring(0, this.txt.length + 1);
         }
 
-        this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+        this.el.innerHTML = `<span class="wrap">${this.txt}</span>`;
 
-        var that = this;
-        var delta = 200 - Math.random() * 100;
+        const that = this;
+        let delta = 200 - Math.random() * 100;
 
-        if (this.isDeleting) { delta /= 2; }
+        if (this.isDeleting) {
+            delta /= 2;
+        }
 
         if (!this.isDeleting && this.txt === fullTxt) {
             delta = this.period;
@@ -35,20 +40,20 @@ class TxtType {
             delta = 500;
         }
 
-        setTimeout(function () {
+        setTimeout(() => {
             that.tick();
         }, delta);
     }
 }
 
 
-window.onload = function() {
+window.onload = function () {
     var elements = document.getElementsByClassName('typewrite');
-    for (var i=0; i<elements.length; i++) {
+    for (var i = 0; i < elements.length; i++) {
         var toRotate = elements[i].getAttribute('data-type');
         var period = elements[i].getAttribute('data-period');
         if (toRotate) {
-          new TxtType(elements[i], JSON.parse(toRotate), period);
+            new TxtType(elements[i], JSON.parse(toRotate), period);
         }
     }
 

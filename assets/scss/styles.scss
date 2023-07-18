@@ -1,8 +1,9 @@
 #home.page {
-  padding: 20px;
+  padding-top: 20px;
 }
 
 .welcome-logo {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,102 +11,98 @@
 }
 
 .logo-circle {
+  margin-top: -10px;
   width: 200px;
   height: 200px;
-  background-size: cover;
-  background-position: center;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease-in-out;
 }
-
 
 .logo-circle:hover {
   transform: scale(1.1);
 }
 
 .typewrite {
-  padding-top: 50px;
+  padding-top: 40px;
   color: #00fff2;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+  font-size: 2rem;
 }
 
-
 #introduction.page {
-  padding: 10px;
+  padding-top: 20px;
 
-  #above {
-    margin-bottom: 10px;
+  #myinfo {
+    margin-top: 20px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    top: 100px;
   }
 
-  #education {
-    padding-top: 10px;
-  }
-
-  .card {
-    margin-bottom: 5px;
-    color: white;
+  #personal-card {
+    margin-top: 150px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 300px;
     background-image: linear-gradient(to right, #1a4414, #e1388a);
+    color: white;
   }
+  
 
   .card-img-top {
     padding-top: 20px;
-    height: 200px;
-    width: auto;
+    height: auto;
+    max-height: 200px;
+    width: 100%;
     object-fit: contain;
   }
 
-  .row.align-items-start {
-    margin-bottom: 10px;
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
   }
 
-  #intro-topleft.col-sm-8 {
-    margin-top: 10px;
-
-    h5 {
-      color: black;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-    }
-
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
   }
 
-  #intro-topleft.col-sm-8 .list-group-item {
-    background: radial-gradient(closest-side, #31d1cc, #ebf8e1, #fcbf7d);
+  .card-text {
+    margin-bottom: 0;
+    color:white;
   }
 
-  .container-fluid {
-    background: linear-gradient(to right, #1a4414, #e1388a);
+  .row{
+    color: white;
   }
 
-  #intro-skills.row.text-center {
-    .col-sm-4 {
-      color: gold;
-    }
-
-    .col-sm-8 {
-      color: white;
-    }
-  }
 }
 
 #projects.page {
   padding: 10px;
 
-  .card-body {
-    -webkit-animation: fadein 4s linear forwards;
-    animation: fadein 4s linear forwards;
+  .card.text-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
   }
 
-  .text-center {
+  .card-body {
+    flex-grow: 1;
     display: flex;
-    padding: auto;
-    font-family: "Arial", sans-serif;
-    font-weight: bold;
-    color: #ff8888;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    -webkit-animation: fadein 4s linear forwards;
+    animation: fadein 4s linear forwards;
   }
 }
 
@@ -116,22 +113,13 @@
     display: flex;
     justify-content: space-between;
   }
-  
+
   .container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     height: 200px;
-  }
-
-  .text-center {
-    padding: auto;
-    font-family: "Arial", sans-serif;
-    font-weight: bold;
-    color: #ff8888;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
   }
 
   .text {
@@ -141,10 +129,13 @@
     text-transform: uppercase;
     letter-spacing: 2px;
   }
+
+  #soicalApps {
+    align-items: center;
+  }
 }
 
 @-webkit-keyframes fadein {
-
   0% {
     opacity: 0;
   }
@@ -155,7 +146,6 @@
 }
 
 @keyframes fadein {
-
   0% {
     opacity: 0;
   }

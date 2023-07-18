@@ -1,11 +1,14 @@
-/* style.css */
-
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-color: transparent;
     padding: 10px;
+    z-index: 999;
 
-    #nav-logo {
-        background-image: linear-gradient(to right, #1a4414, #e1388a); 
+    #navigation {
+        background-image: linear-gradient(to right, #1a4414, #e1388a);
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -24,7 +27,7 @@ header {
 
 main {
     background-color: transparent;
-    
+
     .bg-image {
         position: fixed;
         top: 0;
@@ -40,8 +43,16 @@ main {
     }
 
     #content {
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
         position: relative;
         z-index: 1;
-        text-align: center;
-      }
+    }
+
+    .page {
+        min-height: 100vh;
+        scroll-snap-align: start;
+        display: flex;
+        align-items: center;
+    }
 }
