@@ -56,3 +56,36 @@ main {
         align-items: center;
     }
 }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to right, #1a4414, #e1388a);
+    padding: 10px;
+    text-align: center;
+    z-index: 999;
+    opacity: 0.8;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+footer .social-icons a {
+    margin: 5px;
+}
+
+footer .social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+footer p {
+    margin: 0;
+    color: white;
+}
