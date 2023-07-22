@@ -1,59 +1,51 @@
 #home.page {
   padding-top: 20px;
-}
 
-.welcome-logo {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.logo-circle {
-  margin-top: -10px;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease-in-out;
-}
-
-.logo-circle:hover {
-  transform: scale(1.1);
-}
-
-.typewrite {
-  padding-top: 40px;
-  color: #00fff2;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 2rem;
+  .welcome-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .logo-circle:hover {
+    transform: scale(1.1);
+  }
+  
+  .typewrite {
+    padding-top: 40px;
+    color: #00fff2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+  }
 }
 
 #introduction.page {
   padding-top: 20px;
 
-  #myinfo {
-    margin-top: 20px;
+  #myprofile {
+    height: 100vh;
     display: flex;
-    position: relative;
+    justify-content: center;
     align-items: center;
-    top: 100px;
   }
 
-  #personal-card {
-    margin-top: 150px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    width: 300px;
+  #mycard {
+    margin-right: 30px;
+    width: 280px;
     background-image: linear-gradient(to right, #1a4414, #e1388a);
     color: white;
   }
   
-
   .card-img-top {
     padding-top: 20px;
-    height: auto;
     max-height: 200px;
     width: 100%;
     object-fit: contain;
@@ -62,7 +54,6 @@
   .card-body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     text-align: center;
   }
 
@@ -83,15 +74,35 @@
 
 }
 
-#projects.page {
-  padding: 10px;
+#myeducation.page {
+  padding-top: 20px;
 
-  .card.text-center {
+  #edutable.table{
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+#myinterests.page{
+  padding-top: 20px;
+
+  #interests.container-fluid{
+    color:aquamarine; 
+    background-color: black;
+
+    #skills {
+      padding-top: 20px;
+    }
+  }
+}
+
+#myprojects.page {
+
+  .card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
     height: 100%;
   }
 

@@ -1,26 +1,27 @@
 header {
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
+
+    padding: 5px;
+
     background-color: transparent;
-    padding: 10px;
     z-index: 999;
 
     #navigation {
         background-image: linear-gradient(to right, #1a4414, #e1388a);
+
         display: flex;
         justify-content: space-between;
         align-items: center;
 
         .navbar-brand img {
-            height: 50px;
+            height: 40px;
             border-radius: 50%;
             object-fit: cover;
         }
 
         .navbar-nav .nav-item {
-            margin-right: 10px;
+            margin-right: 20px;
         }
     }
 }
@@ -34,24 +35,26 @@ main {
         left: 0;
         bottom: 0;
         right: 0;
+
         background-image: url("assets/images/background.png");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
+
         z-index: -1;
         opacity: 0.6;
     }
 
     #content {
         overflow-y: scroll;
-        scroll-snap-type: y mandatory;
+        scroll-snap-type: y proximity;
         position: relative;
         z-index: 1;
     }
 
     .page {
         min-height: 100vh;
-        scroll-snap-align: start;
+        scroll-snap-align: center;
         display: flex;
         align-items: center;
     }

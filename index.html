@@ -51,13 +51,13 @@
                             <a class="nav-link dropdown-toggle active" href="#" id="dropdownIntroButton"
                                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Introduction</a>
                             <div class="dropdown-menu" aria-labelledby="dropdownIntroButton">
-                                <a class="dropdown-item" href="#myinfo">Profile</a>
-                                <a class="dropdown-item" href="#edubg">Education</a>
-                                <a class="dropdown-item" href="#more">More about me</a>
+                                <a class="dropdown-item" href="#myprofile">Profile</a>
+                                <a class="dropdown-item" href="#myeducation">Education</a>
+                                <a class="dropdown-item" href="#myinterests">Interests</a>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#projects">Projects</a>
+                            <a class="nav-link active" href="#myprojects">Projects</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="#contact">Contact</a>
@@ -88,14 +88,14 @@
 
             <!-- Introduction page -->
             <section id="introduction" class="page">
-                <div id="myinfo" class="container">
+                <div id="myprofile" class="container">
 
                     <!-- Personal Card -->
-                    <div id="personal-card" class="card">
+                    <div id="mycard" class="card">
                         <img src="assets/images/myprofile.jpeg" class="card-img-top" alt="profile">
                         <div class="card-body">
                             <h5 class="card-title">Linchuan (Jack) Du</h5>
-                            <p class="card-text"> Undergraduate of UBC</p>
+                            <p class="card-text">UBC Undergraduate</p>
                         </div>
                         <dl class="row text-center">
                             <dt class="col-sm-4">Program</dt>
@@ -107,60 +107,40 @@
                         </dl>
                     </div>
 
-                    <!-- Right part of Introduction page -->
-                    <div class="column-sm-8" style="flex-basis: 70%; margin-top: 150px;">
-                        <div id="more-intro">
-                            <!-- Experience and Skills -->
-                            <div id="intro-experience" class="card-info">
-                                <!-- Experience -->
-                                <div class="list-group">
-                                    <a href="#" class="list-group-item list-group-item-action">
-                                        <div class="d-flex w-100 justify-content-between">
-                                            <h5 class="mb-1">Internship</h5>
-                                            <small>Sep 2020 -- Mar 2021</small>
-                                        </div>
-                                        <p class="mb-1">Market research & Data analysis & Participating in CIIF and
-                                            CIIE.</p>
-                                        <small>Hitachi (China) Ltd</small>
-                                    </a>
-                                    <a href="#" class="list-group-item list-group-item-action">
-                                        <div class="d-flex w-100 justify-content-between">
-                                            <h5 class="mb-1">Internship</h5>
-                                            <small class="text-body-secondary">May 2023 -- Aug 2023</small>
-                                        </div>
-                                        <p class="mb-1">ASR AI model & API development</p>
-                                        <small class="text-body-secondary">VoicePing</small>
-                                    </a>
-                                    <a href="#" class="list-group-item list-group-item-action">
-                                        <div class="d-flex w-100 justify-content-between">
-                                            <h5 class="mb-1">Volunteer</h5>
-                                            <small class="text-body-secondary">Jan 2022 -- Dec 2022</small>
-                                        </div>
-                                        <p class="mb-1">Assisting research on Concussion Balance Deficits</p>
-                                        <small class="text-body-secondary">UBC</small>
-                                    </a>
-                                </div>
-                                <!-- Skills -->
-                                <div class="container-fluid">
-                                    <dl id="intro-skills" class="row text-center">
-                                        <dt class="col-sm-4">Communicating Languages</dt>
-                                        <dd class="col-sm-8">Chinese, English, Japanese</dd>
-                                        <dt class="col-sm-4">Programming Languages</dt>
-                                        <dd class="col-sm-8">Java, Python, R, C++, Javascript, SQL</dd>
-                                        <dt class="col-sm-4">Interested Topics</dt>
-                                        <dd class="col-sm-8">Software Engineering, Machine Learning, Statistical
-                                            Analysis</dd>
-                                    </dl>
-                                </div>
+                    <!-- Experience -->
+                    <div id="myexperience" class="list-group" style="flex-basis: 65%;">
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="mb-1">Internship</h5>
+                                <small>Sep 2020 -- Mar 2021</small>
                             </div>
-                        </div>
+                            <p class="mb-1">Marketing Research Assistant</p>
+                            <small class="text-body-secondary">Hitachi (China) Co., Ltd. Shanghai Branch</small>
+                        </a>
 
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="mb-1">Volunteer</h5>
+                                <small class="text-body-secondary">Jan 2022 -- Dec 2022</small>
+                            </div>
+                            <p class="mb-1">Research Assistant & Data Analyst</p>
+                            <small class="text-body-secondary">The University of British Columbia</small>
+                        </a>
+
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="mb-1">Internship</h5>
+                                <small class="text-body-secondary">May 2023 -- Present</small>
+                            </div>
+                            <p class="mb-1">Deep Learning AI & Web API Developer</p>
+                            <small class="text-body-secondary">VoicePing Co., Ltd.</small>
+                        </a>
                     </div>
             </section>
 
-            <section id="edubg" class="page">
+            <section id="myeducation" class="page">
                 <!-- Education Table -->
-                <table id="education" class="table table-info table-hover table-bordered table-striped">
+                <table id="edutable" class="table table-info table-hover table-bordered table-striped">
                     <thead>
                         <tr>
                             <th scope="col">Education</th>
@@ -172,40 +152,58 @@
                         <tr>
                             <th scope="row">Junior High School</th>
                             <td>Lansheng Fudan Middle School</td>
-                            <td>Sept 2013 - June 2017</td>
+                            <td>Sep 2013 - Jun 2017</td>
                         </tr>
                         <tr>
                             <th scope="row">Senior High School</th>
                             <td>No. 2 High School Attached to East China Normal University</td>
-                            <td>Sept 2017 - June 2020</td>
+                            <td>Sep 2017 - Jun 2020</td>
                         </tr>
                         <tr>
                             <th scope="row">University</th>
-                            <td>University of British Columbia</td>
-                            <td>Sept 2020 - June 2023 present</td>
+                            <td>The University of British Columbia</td>
+                            <td>Sep 2020 - Present</td>
                         </tr>
                     </tbody>
                 </table>
             </section>
 
-            <section id="more" class="page">
-                <h>More about me!</h>
+            <section id="myinterests" class="page">
+                <div id="interests" class="container-fluid">
+                    <!-- Skills -->
+                    <dl id="skills" class="row text-center">
+                        <dt class="col-sm-4">Spoken Languages</dt>
+                        <dd class="col-sm-8">Chinese, English, Japanese</dd>
+                        <dt class="col-sm-4">Programming Languages</dt>
+                        <dd class="col-sm-8">Python, Java, R, C++, PHP, Javascript, SQL</dd>
+                        <dt class="col-sm-4">Interested Topics</dt>
+                        <dd class="col-sm-8">Software Engineering, Machine Learning,
+                            Applied Mathematics, Statistical Analysis</dd>
+                    </dl>
+                </div>
             </section>
 
             <!-- Project page -->
-            <section id="projects" class="page">
-                <div class="container">
+            <section id="myprojects" class="page">
+                <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-4 mt-4">
                             <div class="card">
                                 <div class="card-body">
                                     <i class="fas fa-desktop"></i>
                                     <h4 class="card-title mt-3">Portfolio Website</h4>
-                                    <p class="card-text mt-3">Literally this project! Built with HTML5, CSS3,
-                                        Bootstrap5, SASS and Javascript.
-                                        Learned how to design website structures, customize styles, and build
-                                        interactions
-                                        & animations using Javascript.
+                                    <p class="card-text mt-3">
+                                    <ul>
+                                        <li>
+                                            Name: Portfolio Website
+                                        </li>
+                                        <li>
+                                            Languges: HTML, CSS, SASS, Javascript
+                                        </li>
+                                        <li>
+                                            Tools: Bootstrap 5, Font Awesome
+                                        </li>
+                                    </ul>
                                     </p>
                                 </div>
                             </div>
@@ -215,9 +213,18 @@
                                 <div class="card-body">
                                     <i class='fas fa-database'></i>
                                     <h4 class="card-title mt-3">Relational Database</h4>
-                                    <p class="card-text mt-3">Built a Library Database Management System using
-                                        self-designed SQL Database, Oracle, PHP/Apache, HTML5 and CSS3.
-                                        Learned how to design databases and the interface for users to access data.
+                                    <p class="card-text mt-3">
+                                    <ul>
+                                        <li>
+                                            Name: Relational Library DBMS
+                                        </li>
+                                        <li>
+                                            Languges: SQL, PHP, HTML, CSS
+                                        </li>
+                                        <li>
+                                            Tools: Oracle OCI8, SQL *Plus, VS Code
+                                        </li>
+                                    </ul>
                                     </p>
                                 </div>
                             </div>
@@ -227,10 +234,19 @@
                             <div class="card">
                                 <div class="card-body">
                                     <i class='fas fa-brain'></i>
-                                    <h4 class="card-title mt-3">ASR Deep Learning</h4>
-                                    <p class="card-text mt-3">Trained and finetuned on ASR models, performance inference
-                                        for speech-to-text tasks using Python libraries like PyTorch.
-                                        Learned how to extract data, develop models and perform test.
+                                    <h4 class="card-title mt-3">ML AI DevOps</h4>
+                                    <p class="card-text mt-3">
+                                    <ul>
+                                        <li>
+                                            Name: ASR LLM Development
+                                        </li>
+                                        <li>
+                                            Languges: Python, Jupyter Notebook
+                                        </li>
+                                        <li>
+                                            Tools: PyTorch, Transformers, Azure
+                                        </li>
+                                    </ul>
                                     </p>
                                 </div>
                             </div>
@@ -243,10 +259,18 @@
                                 <div class="card-body">
                                     <i class='fab fa-r-project'></i>
                                     <h4 class="card-title mt-3">Predictive Modeling</h4>
-                                    <p class="card-text mt-3">Analyzed and modelled for a dataset about insurance
-                                        charges using R.
-                                        Learned how to visualize data using R studio and perform multiple linear
-                                        regression, model selection and model diagnostics.
+                                    <p class="card-text mt-3">
+                                    <ul>
+                                        <li>
+                                            Name: Predictive Model on Insurance Charges
+                                        </li>
+                                        <li>
+                                            Languges: R, Jupyter Notebook
+                                        </li>
+                                        <li>
+                                            Tools: R Studio, Kaggle, ggplot2
+                                        </li>
+                                    </ul>
                                     </p>
                                 </div>
                             </div>
@@ -257,10 +281,18 @@
                                 <div class="card-body">
                                     <i class='fab fa-java'></i>
                                     <h4 class="card-title mt-3">Soccer Manager</h4>
-                                    <p class="card-text mt-3">Built a CRUD soccer management system with CLI and GUI in
-                                        Java and JavaSwing.
-                                        Learned Java OOPs and how to achieve persistent storage by JSON files and design
-                                        easy-to-read user interfaces.
+                                    <p class="card-text mt-3">
+                                    <ul>
+                                        <li>
+                                            Name: CRUD Soccer Manager
+                                        </li>
+                                        <li>
+                                            Languges: Java, JSON
+                                        </li>
+                                        <li>
+                                            Tools: IntelliJ IDEA, JUnit, Java Swing
+                                        </li>
+                                    </ul>
                                     </p>
                                 </div>
                             </div>
@@ -270,12 +302,19 @@
                             <div class="card">
                                 <div class="card-body">
                                     <i class='fas fa-wrench'></i>
-                                    <h4 class="card-title mt-3">DSA</h4>
-                                    <p class="card-text mt-3">Used C++ programming language to understand basic data
-                                        structures
-                                        and algorithms. Learned topics such as linked lists, stack, queue, deque, trees,
-                                        heap
-                                        and some algorithms.
+                                    <h4 class="card-title mt-3">DSA Learning</h4>
+                                    <p class="card-text mt-3">
+                                        <ul>
+                                            <li>
+                                                Name: Data Structures and Algorithms
+                                            </li>
+                                            <li>
+                                                Languges: C++
+                                            </li>
+                                            <li>
+                                                Tools: GCC, Linux, Xshell
+                                            </li>
+                                        </ul>
                                     </p>
                                 </div>
                             </div>
@@ -318,9 +357,9 @@
         </div>
         <p>&copy; 2023 Jack Du. All rights reserved.</p>
     </footer>
-    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- TODO -->
     <script src="assets/js/script.js"></script>
     <script src="assets/js/typingstyle.js"></script>
 </body>

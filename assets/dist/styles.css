@@ -1,55 +1,43 @@
 #home.page {
   padding-top: 20px; }
-
-.welcome-logo {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px; }
-
-.logo-circle {
-  margin-top: -10px;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease-in-out; }
-
-.logo-circle:hover {
-  transform: scale(1.1); }
-
-.typewrite {
-  padding-top: 40px;
-  color: #00fff2;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 2rem; }
+  #home.page .welcome-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  #home.page .logo-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out; }
+  #home.page .logo-circle:hover {
+    transform: scale(1.1); }
+  #home.page .typewrite {
+    padding-top: 40px;
+    color: #00fff2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem; }
 
 #introduction.page {
   padding-top: 20px; }
-  #introduction.page #myinfo {
-    margin-top: 20px;
+  #introduction.page #myprofile {
+    height: 100vh;
     display: flex;
-    position: relative;
-    align-items: center;
-    top: 100px; }
-  #introduction.page #personal-card {
-    margin-top: 150px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    width: 300px;
+    justify-content: center;
+    align-items: center; }
+  #introduction.page #mycard {
+    margin-right: 30px;
+    width: 280px;
     background-image: linear-gradient(to right, #1a4414, #e1388a);
     color: white; }
   #introduction.page .card-img-top {
     padding-top: 20px;
-    height: auto;
     max-height: 200px;
     width: 100%;
     object-fit: contain; }
   #introduction.page .card-body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     text-align: center; }
   #introduction.page .card-title {
     font-size: 1.2rem;
@@ -61,23 +49,34 @@
   #introduction.page .row {
     color: white; }
 
-#projects.page {
-  padding: 10px; }
-  #projects.page .card.text-center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 100%; }
-  #projects.page .card-body {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    -webkit-animation: fadein 4s linear forwards;
-    animation: fadein 4s linear forwards; }
+#myeducation.page {
+  padding-top: 20px; }
+  #myeducation.page #edutable.table {
+    width: 80%;
+    margin: 0 auto; }
+
+#myinterests.page {
+  padding-top: 20px; }
+  #myinterests.page #interests.container-fluid {
+    color: aquamarine;
+    background-color: black; }
+    #myinterests.page #interests.container-fluid #skills {
+      padding-top: 20px; }
+
+#myprojects.page .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%; }
+#myprojects.page .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  -webkit-animation: fadein 4s linear forwards;
+  animation: fadein 4s linear forwards; }
 
 #contact.page {
   padding: 10px; }
