@@ -76,7 +76,7 @@ footer {
 }
 
 footer .social-icons {
-    margin-bottom: 0%;
+    margin-bottom: -5px;
 }
 
 footer .social-icons a {

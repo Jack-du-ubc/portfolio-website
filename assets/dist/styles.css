@@ -63,50 +63,25 @@
     #myinterests.page #interests.container-fluid #skills {
       padding-top: 20px; }
 
-#myprojects.page .card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%; }
 #myprojects.page .card-body {
-  flex-grow: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  -webkit-animation: fadein 4s linear forwards;
-  animation: fadein 4s linear forwards; }
+  align-items: center; }
 
 #contact.page {
-  padding: 10px; }
-  #contact.page .container-fluid {
-    display: flex;
-    justify-content: space-between; }
-  #contact.page .container {
+  padding: 20px; }
+  #contact.page .col-md-6 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 200px; }
+    text-align: center; }
   #contact.page .text {
-    padding: 120px;
+    padding: 100px;
     font-family: "Arial", sans-serif;
     color: #022222;
     text-transform: uppercase;
     letter-spacing: 2px; }
-  #contact.page #soicalApps {
-    align-items: center; }
-
-@-webkit-keyframes fadein {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-@keyframes fadein {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
+  #contact.page #socialapps {
+    display: flex;
+    justify-content: center; }
 
 /*# sourceMappingURL=styles.css.map */

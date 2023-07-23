@@ -98,70 +98,32 @@
 
 #myprojects.page {
 
-  .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-  }
-
   .card-body {
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    -webkit-animation: fadein 4s linear forwards;
-    animation: fadein 4s linear forwards;
   }
 }
 
 #contact.page {
-  padding: 10px;
+  padding: 20px;
 
-  .container-fluid {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .container {
+  .col-md-6 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
+    text-align: center;
   }
 
   .text {
-    padding: 120px;
+    padding: 100px;
     font-family: "Arial", sans-serif;
     color: #022222;
     text-transform: uppercase;
     letter-spacing: 2px;
   }
 
-  #soicalApps {
-    align-items: center;
-  }
-}
-
-@-webkit-keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
+  #socialapps {
+    display: flex;
+    justify-content: center;
   }
 }
