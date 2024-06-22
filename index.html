@@ -37,7 +37,7 @@
                             <a class="nav-link active" href="#home">Home</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="#" id="dropdownIntroButton"
+                            <a class="nav-link dropdown-toggle active" id="dropdownIntroButton"
                                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Introduction</a>
                             <div class="dropdown-menu" aria-labelledby="dropdownIntroButton">
                                 <a class="dropdown-item" href="#myprofile">Profile</a>
@@ -358,11 +358,17 @@
         $(document).ready(function() {
             $('.nav-link').on('click', function(e) {
                 e.preventDefault();
+                $('.nav-link').removeClass('active');
+                $(this).addClass('active');
+
                 var targetHref = $(this).attr('href');
-                if (targetHref.startsWith('#')) {
-                    $('html, body').animate({
-                        scrollTop: $(targetHref).offset().top
-                    }, 500);
+                if (targetHref && targetHref.startsWith('#')) {
+                    var offset = $(targetHref).offset();
+                    if (offset) {
+                        $('html, body').animate({
+                            scrollTop: offset.top
+                        }, 500);
+                    }
                 }
             });
 
